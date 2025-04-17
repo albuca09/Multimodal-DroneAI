@@ -1,0 +1,10 @@
+
+version: "3"
+services:
+  timescaledb:
+    image: timescale/timescaledb:2.14.2-pg15
+    environment:
+      POSTGRES_PASSWORD: drone
+      POSTGRES_USER: drone
+    ports:
+      - "5432:5432"
